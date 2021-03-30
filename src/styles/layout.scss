@@ -1,0 +1,32 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: 100vh;
+  width: 100vw;
+
+  &_landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+
+  &_landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: auto;
+    max-width: 600;
+    margin: 3rem auto;
+    padding: 1rem;
+  }
+}
