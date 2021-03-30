@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./navigation";
+import "@fontsource/poppins";
 import "../styles/main.scss";
 
 const Layout = (props) => {

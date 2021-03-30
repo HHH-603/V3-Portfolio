@@ -1,4 +1,5 @@
 import React from "react";
+import "@fontsource/poppins";
 import "../styles/main.scss";
 
 const LandingPageLayout = (props) => {

@@ -1,3 +1,5 @@
+$base-container-width: 60rem;
+
 .layout {
   display: flex;
   justify-content: center;
@@ -9,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     height: 100vh;
     width: 100vw;
   }
@@ -25,8 +27,18 @@
     justify-content: center;
     flex-flow: column wrap;
     height: auto;
-    max-width: 600;
+    max-width: $base-container-width;
     margin: 3rem auto;
     padding: 1rem;
+
+    &--links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+      height: auto;
+      max-width: $base-container-width;
+      padding: 0 1rem;
+    }
   }
 }

@@ -1,6 +1,45 @@
+@import "./colors.scss";
+
+$base-transition: 200ms;
+$base-transition-and-effect: 100ms ease-in;
+
 .navigation {
   display: flex;
   align-items: center;
   height: auto;
   width: 100vw;
+}
+
+.anchor {
+  text-decoration: none;
+  color: $base-font-color;
+  background: linear-gradient($base-font-color 0 0) 0% calc(-1px - 100%) /
+    var(--d, 0%) 200% no-repeat;
+  transition: $base-transition,
+    background-size $base-transition $base-transition;
+}
+
+.anchor:hover {
+  --d: 100%;
+  background-position: 50% 0%;
+  color: $base-background-color;
+  transition: $base-transition,
+    background-position $base-transition $base-transition,
+    color $base-transition $base-transition;
+}
+
+.link {
+  text-decoration: none;
+  color: $base-font-color;
+  text-align: center;
+  width: 5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid $base-font-color;
+  transition: all $base-transition-and-effect;
+}
+
+.link:hover {
+  background-color: $base-font-color;
+  color: $base-background-color;
 }
