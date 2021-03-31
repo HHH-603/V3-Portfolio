@@ -6235,6 +6235,17 @@ const Navigation = () => {
   }, "Hank")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container_navbar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container_navbar--links"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "link",
+    to: "/about"
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "link",
+    to: "#"
+  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "link",
+    to: "#"
+  }, "Contact")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container_menu-icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: menubar ? "menu-bar" : "menu-bar-tilt",
@@ -6245,13 +6256,13 @@ const Navigation = () => {
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: sansToggle ? "container_dropdown-menu--hidden" : "container_dropdown-menu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    className: "link_navigation",
+    className: "link",
     to: "/about"
   }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    className: "link_navigation",
+    className: "link",
     to: "#"
   }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    className: "link_navigation",
+    className: "link",
     to: "#"
   }, "Contact")));
 };
@@ -6328,32 +6339,66 @@ const About = () => {
     className: "image_profile",
     src: _images_alaska_jpg__WEBPACK_IMPORTED_MODULE_2__.default,
     alt: "profile"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I'm originally from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("anchor", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container_paragraph"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "paragraph"
+  }, "I'm originally from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("anchor", {
     className: "anchor",
     href: "https://en.wikipedia.org/wiki/Dunbarton,_New_Hampshire"
-  }, "Dunbarton, NH"), ", and have several years of SaaS sales/marketing and campaign management experience. Some languages and technologies that I've recently been working with are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+  }, "Dunbarton, NH"), ", and have several years of SaaS sales and campaign management experience. I recently graduated from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://en.wikipedia.org/wiki/University_of_North_Carolina_at_Charlotte",
+    target: "__blank"
+  }, "UNC Charlotte"), "' Full Stack Web Development program and previously worked at EveryAction in Washington, DC, where I helped equip small and mid-sized nonprofits with customized cloud CRM solutions tailored to their unique fundraising, advocacy, and reporting goals."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "paragraph"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container_skills"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "paragraph"
+  }, "Some languages and technologies that I've recently been working with are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list_skills"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-item_skill"
-  }, "React (Gatsby)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://reactjs.org/",
+    target: "__blank"
+  }, "React"), "/", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://www.gatsbyjs.com/",
+    target: "__blank"
+  }, "Gatsby")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-item_skill"
-  }, "JavaScript"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://www.javascript.com/",
+    target: "__blank"
+  }, "JavaScript")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-item_skill"
-  }, "Node.js"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://nodejs.org/en/",
+    target: "__blank"
+  }, "Node.js")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-item_skill"
-  }, "Express.js"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://www.mongodb.com/",
+    target: "__blank"
+  }, "MongoDB")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-item_skill"
-  }, "MongoDB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://www.mysql.com/",
+    target: "__blank"
+  }, "MySQL")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-item_skill"
-  }, "MySQL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }, "HTML"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }, "(S)CSS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }))));
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://sass-lang.com/",
+    target: "__blank"
+  }, "SASS/SCSS")))))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);

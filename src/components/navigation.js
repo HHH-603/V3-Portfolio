@@ -22,6 +22,17 @@ const Navigation = () => {
           </Link>
         </div>
         <div className="container_navbar">
+          <div className="container_navbar--links">
+            <Link className="link_navbar" to="/about">
+              About
+            </Link>
+            <Link className="link_navbar" to="#">
+              Projects
+            </Link>
+            <Link className="link_navbar" to="#">
+              Contact
+            </Link>
+          </div>
           <div className="container_menu-icon">
             <div
               className={menubar ? "menu-bar" : "menu-bar-tilt"}
@@ -40,13 +51,13 @@ const Navigation = () => {
             : "container_dropdown-menu"
         }
       >
-        <Link className="link_navigation" to="/about">
+        <Link className="link" to="/about">
           About
         </Link>
-        <Link className="link_navigation" to="#">
+        <Link className="link" to="#">
           Projects
         </Link>
-        <Link className="link_navigation" to="#">
+        <Link className="link" to="#">
           Contact
         </Link>
       </div>
