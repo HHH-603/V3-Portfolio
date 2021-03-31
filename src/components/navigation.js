@@ -1,11 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 
 const Navigation = () => {
+  const [sansToggle, withToggle] = useState(true);
+  const [menubar, tiltMenubar] = useState(true);
+
+  function handleToggle() {
+    withToggle(!sansToggle);
+  }
+
+  function handleTilt() {
+    tiltMenubar(!menubar);
+  }
+
   return (
     <>
       <nav className="navigation">
-        <Link className="link_navigation" to="#">
+        <div className="container_navbar-header">
+          <Link className="link_navbar-header" to="/">
+            Hank
+          </Link>
+        </div>
+        <div className="container_navbar">
+          <div className="container_menu-icon">
+            <div
+              className={menubar ? "menu-bar" : "menu-bar-tilt"}
+              onClick={() => {
+                handleToggle();
+                handleTilt();
+              }}
+            ></div>
+          </div>
+        </div>
+      </nav>
+      <div
+        className={
+          sansToggle
+            ? "container_dropdown-menu--hidden"
+            : "container_dropdown-menu"
+        }
+      >
+        <Link className="link_navigation" to="/about">
           About
         </Link>
         <Link className="link_navigation" to="#">
@@ -14,7 +49,7 @@ const Navigation = () => {
         <Link className="link_navigation" to="#">
           Contact
         </Link>
-      </nav>
+      </div>
     </>
   );
 };

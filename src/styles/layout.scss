@@ -1,10 +1,13 @@
+@import "./colors.scss";
+@import "./components.scss";
+
 $base-container-width: 60rem;
 
 .layout {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
-  height: 100vh;
+  flex-flow: column wrap;
+  height: auto;
   width: 100vw;
 
   &_landing-page {
@@ -19,7 +22,12 @@ $base-container-width: 60rem;
 
 .container {
   display: flex;
+  align-items: center;
   flex-flow: column wrap;
+  height: auto;
+  max-width: $base-container-width;
+  margin: 1rem auto;
+  padding: 1rem;
 
   &_landing-page {
     display: flex;
@@ -28,7 +36,7 @@ $base-container-width: 60rem;
     flex-flow: column wrap;
     height: auto;
     max-width: $base-container-width;
-    margin: 3rem auto;
+    margin: 1rem auto;
     padding: 1rem;
 
     &--links {
@@ -40,5 +48,52 @@ $base-container-width: 60rem;
       max-width: $base-container-width;
       padding: 0 1rem;
     }
+  }
+
+  &_navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+  &_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  &_menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  &_dropdown-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 30vh;
+    width: auto;
+    margin-bottom: 1rem;
+    background-color: $base-font-color;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &_paragraph {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  &_skills {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
   }
 }

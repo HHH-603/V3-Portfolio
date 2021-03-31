@@ -15,6 +15,7 @@
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js")),
+  "component---src-pages-about-js": preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js")),
   "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))
   }
 
@@ -6153,6 +6154,112 @@ const LandingPageLayout = props => {
 
 /***/ }),
 
+/***/ "./src/components/layout.js":
+/*!**********************************!*\
+  !*** ./src/components/layout.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navigation */ "./src/components/navigation.js");
+/* harmony import */ var _fontsource_poppins__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fontsource/poppins */ "./node_modules/@fontsource/poppins/index.css");
+/* harmony import */ var _fontsource_poppins__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fontsource_poppins__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _fontsource_pacifico__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fontsource/pacifico */ "./node_modules/@fontsource/pacifico/index.css");
+/* harmony import */ var _fontsource_pacifico__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fontsource_pacifico__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/main.scss */ "./src/styles/main.scss");
+/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+const Layout = props => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "layout"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_navigation__WEBPACK_IMPORTED_MODULE_1__.default, null), props.children));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+
+/***/ }),
+
+/***/ "./src/components/navigation.js":
+/*!**************************************!*\
+  !*** ./src/components/navigation.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+
+
+
+const Navigation = () => {
+  const {
+    0: sansToggle,
+    1: withToggle
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const {
+    0: menubar,
+    1: tiltMenubar
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+
+  function handleToggle() {
+    withToggle(!sansToggle);
+  }
+
+  function handleTilt() {
+    tiltMenubar(!menubar);
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "navigation"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container_navbar-header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "link_navbar-header",
+    to: "/"
+  }, "Hank")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container_navbar"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container_menu-icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: menubar ? "menu-bar" : "menu-bar-tilt",
+    onClick: () => {
+      handleToggle();
+      handleTilt();
+    }
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: sansToggle ? "container_dropdown-menu--hidden" : "container_dropdown-menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "link_navigation",
+    to: "/about"
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "link_navigation",
+    to: "#"
+  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "link_navigation",
+    to: "#"
+  }, "Contact")));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navigation);
+
+/***/ }),
+
 /***/ "./src/pages/404.js":
 /*!**************************!*\
   !*** ./src/pages/404.js ***!
@@ -6193,6 +6300,66 @@ const NotFoundPage = () => {
 
 /***/ }),
 
+/***/ "./src/pages/about.js":
+/*!****************************!*\
+  !*** ./src/pages/about.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _images_alaska_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/alaska.jpg */ "./src/images/alaska.jpg");
+
+
+
+
+const About = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "header"
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "image_profile",
+    src: _images_alaska_jpg__WEBPACK_IMPORTED_MODULE_2__.default,
+    alt: "profile"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I'm originally from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("anchor", {
+    className: "anchor",
+    href: "https://en.wikipedia.org/wiki/Dunbarton,_New_Hampshire"
+  }, "Dunbarton, NH"), ", and have several years of SaaS sales/marketing and campaign management experience. Some languages and technologies that I've recently been working with are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "list_skills"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, "React (Gatsby)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, "JavaScript"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, "Node.js"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, "Express.js"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, "MongoDB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, "MySQL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, "HTML"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, "(S)CSS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
+
+/***/ }),
+
 /***/ "./src/pages/index.js":
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
@@ -6215,15 +6382,21 @@ __webpack_require__.r(__webpack_exports__);
 const Home = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_landing_page_layout__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "container_landing-page"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h1", null, "Greetings!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "My name is", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h1", {
+    className: "header"
+  }, "Greetings!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "My name is", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
     className: "anchor",
     href: "https://www.linkedin.com/in/henryhamiltonholmes/",
     target: "__blank"
-  }, "Hank"), " ", ", and I'm a Full Stack Web Developer based in Charlotte, NC. I love to create thoughtfully-designed web apps and websites, solve complex problems, and learn new things every day."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
+  }, "Hank"), " ", ", and I'm a Full Stack Web Developer based in", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+    className: "anchor",
+    href: "https://en.wikipedia.org/wiki/Charlotte,_North_Carolina",
+    target: "__blank"
+  }, "Charlotte, NC"), ". I love to create thoughtfully-designed web apps and websites, solve complex problems, and learn new things every day."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "container_landing-page--links"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
     className: "link",
-    to: "#"
+    to: "/about"
   }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
     className: "link",
     to: "#"
@@ -14037,6 +14210,16 @@ function mitt(all                 ) {
 
 /***/ }),
 
+/***/ "./node_modules/@fontsource/pacifico/index.css":
+/*!*****************************************************!*\
+  !*** ./node_modules/@fontsource/pacifico/index.css ***!
+  \*****************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/@fontsource/poppins/index.css":
 /*!****************************************************!*\
   !*** ./node_modules/@fontsource/poppins/index.css ***!
@@ -16894,6 +17077,21 @@ module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.c
 
 /***/ }),
 
+/***/ "./src/images/alaska.jpg":
+/*!*******************************!*\
+  !*** ./src/images/alaska.jpg ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/alaska-f3c03b0ad8ee6bb93d4cf2c5d4aa406d.jpg");
+
+/***/ }),
+
 /***/ "react-dom/server":
 /*!************************************************************************************************!*\
   !*** external "/home/hhh603/Documents/Projects/V3-Portfolio/node_modules/react-dom/server.js" ***!
@@ -17015,6 +17213,11 @@ module.exports = require("path");;
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/

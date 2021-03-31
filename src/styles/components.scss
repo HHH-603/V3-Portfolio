@@ -6,8 +6,32 @@ $base-transition-and-effect: 100ms ease-in;
 .navigation {
   display: flex;
   align-items: center;
-  height: auto;
-  width: 100vw;
+  justify-content: center;
+  max-width: 100vw;
+  margin: 1rem 0;
+}
+
+.menu-bar {
+  height: 0.5rem;
+  width: 2rem;
+  background-color: $base-font-color;
+  transition: $base-transition;
+  margin-top: 0.35rem;
+  margin-right: 1rem;
+}
+
+.menu-bar-tilt {
+  height: 0.5rem;
+  width: 2rem;
+  background-color: $base-font-color;
+  transition: $base-transition;
+  margin-top: 0.35rem;
+  margin-right: 1rem;
+  transform: rotate(-45deg);
+}
+
+.header {
+  text-align: center;
 }
 
 .anchor {
@@ -37,9 +61,42 @@ $base-transition-and-effect: 100ms ease-in;
   padding: 0.5rem;
   border: 1px solid $base-font-color;
   transition: all $base-transition-and-effect;
+
+  &_navbar-header {
+    text-decoration: none;
+    font-family: "Pacifico";
+    font-size: 2rem;
+    color: $base-font-color;
+    text-align: center;
+    margin-left: 1rem;
+  }
+
+  &_navigation {
+    text-decoration: none;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    background-color: blueviolet;
+    color: $base-background-color;
+    margin: 1rem 0;
+    transition: $base-transition;
+  }
 }
 
 .link:hover {
   background-color: $base-font-color;
   color: $base-background-color;
+}
+
+.list {
+  &_skills {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+.list-item {
+  &_skill {
+    margin: 0 0.25rem;
+  }
 }

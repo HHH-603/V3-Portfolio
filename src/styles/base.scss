@@ -15,7 +15,6 @@ html {
 h1 {
   font-size: 1.9rem;
   line-height: 2.4rem;
-  text-align: center;
 }
 
 h2 {
@@ -28,4 +27,20 @@ a,
 Link {
   font-size: 0.9rem;
   line-height: 1.4rem;
+}
+
+.image {
+  &_profile {
+    max-height: 20rem;
+    max-width: 20rem;
+  }
+}
+
+@media screen and (max-width: 353px) {
+  .image {
+    &_profile {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
 }

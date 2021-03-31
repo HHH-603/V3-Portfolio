@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <LandingPageLayout>
       <div className="container_landing-page">
-        <h1>Greetings!</h1>
+        <h1 className="header">Greetings!</h1>
         <p>
           My name is{" "}
           <a
@@ -28,7 +28,7 @@ const Home = () => {
           complex problems, and learn new things every day.
         </p>
         <div className="container_landing-page--links">
-          <Link className="link" to="#">
+          <Link className="link" to="/about">
             About
           </Link>
           <Link className="link" to="#">
