@@ -32,12 +32,12 @@ const About = () => {
             mid-sized nonprofits with customized cloud CRM solutions tailored to
             their unique fundraising, advocacy, and reporting goals.
           </p>
-
-          <p className="paragraph"></p>
           <div className="container_skills">
             <p className="paragraph">
-              Some languages and technologies that I've recently been working
-              with are:
+              <strong>
+                Some languages and technologies that I've recently been working
+                with are:
+              </strong>
             </p>
             <ul className="list_skills">
               <li className="list-item_skill">
