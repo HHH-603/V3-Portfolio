@@ -16,8 +16,7 @@ exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js")),
   "component---src-pages-about-js": preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js")),
-  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")),
-  "component---src-pages-projects-js": preferDefault(__webpack_require__(/*! ./src/pages/projects.js */ "./src/pages/projects.js"))
+  "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))
   }
 
 
@@ -6124,53 +6123,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/components/card.js":
-/*!********************************!*\
-  !*** ./src/components/card.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-const Card = props => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "secondary-header_card"
-  }, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "paragraph"
-  }, props.role), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "paragraph"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Description: "), props.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "paragraph"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Environment: "), props.environment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list_card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_card"
-  }, "\u25FC ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("italic", null, props["summary-one"])), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_card"
-  }, "\u25FC ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("italic", null, props["summary-two"]))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container_card-links"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "link_card",
-    href: props.deployed
-  }, "View Live"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "link_card",
-    href: props.repository
-  }, "View Source Code")));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Card);
-
-/***/ }),
-
 /***/ "./src/components/landing-page-layout.js":
 /*!***********************************************!*\
   !*** ./src/components/landing-page-layout.js ***!
@@ -6472,12 +6424,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var greeting = () => {
+  let today = new Date();
+  let hoursNow = today.getHours();
+
+  if (hoursNow > 18) {
+    return "Good evening!";
+  } else if (hoursNow > 12) {
+    return "Good afternoon!";
+  } else if (hoursNow > 0) {
+    return "Good morning!";
+  } else {
+    return "Wow! Thank you for visiting my portfolio so late at night!";
+  }
+};
+
 const Home = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_landing_page_layout__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
     className: "container_landing-page"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("h1", {
     className: "header"
-  }, "Greetings!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "My name is", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
+  }, greeting()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "My name is", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
     className: "anchor",
     href: "https://www.linkedin.com/in/henryhamiltonholmes/",
     target: "__blank"
@@ -6500,66 +6467,6 @@ const Home = () => {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
-
-/***/ }),
-
-/***/ "./src/pages/projects.js":
-/*!*******************************!*\
-  !*** ./src/pages/projects.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/card */ "./src/components/card.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
-/* harmony import */ var _images_projects_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/projects.json */ "./src/images/projects.json");
-
-
-
-
-
-class Projects extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
-  constructor(...args) {
-    super(...args);
-    this.state = {
-      projects: _images_projects_json__WEBPACK_IMPORTED_MODULE_3__
-    };
-
-    this.Project = id => {
-      this.setState({
-        projects: _images_projects_json__WEBPACK_IMPORTED_MODULE_3__
-      });
-    };
-  }
-
-  render() {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      className: "container"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-      className: "header"
-    }, "Projects"), this.state.projects.map(project => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_card__WEBPACK_IMPORTED_MODULE_1__.default, {
-      id: project.id,
-      key: project.id,
-      title: project.title,
-      role: project.role,
-      description: project.description,
-      environment: project.environment,
-      "summary-one": project["summary-one"],
-      "summary-two": project["summary-two"],
-      deployed: project.deployed,
-      repository: project.repository
-    }))));
-  }
-
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Projects);
 
 /***/ }),
 
@@ -17242,17 +17149,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/alaska-f3c03b0ad8ee6bb93d4cf2c5d4aa406d.jpg");
-
-/***/ }),
-
-/***/ "./src/images/projects.json":
-/*!**********************************!*\
-  !*** ./src/images/projects.json ***!
-  \**********************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('[{"id":1,"title":"Constitution Quiz","role":"Team Lead, Front End Developer","description":"MERN web application enabling users to test their knowledge of American Civics and History","environment":"JavaScript, React, Node.js, MongoDB, CSS","summary-one":"Led team of 4 Developers through the application’s end-to-end lifecycle","summary-two":"Responsible for designing, building, and styling the application’s UI and Components","deployed":"https://constitutionquiz.herokuapp.com/loginform","repository":"https://github.com/HHH-603/Constitution_Quiz"},{"id":2,"title":"Budget Tracker","role":"Developer","description":"Progressive web application empowering users to easily track purchases and deposits both online and offline","environment":"JavaScript, HTML, Bootstrap, MongoDB","summary-one":"Used MongoDB Atlas as the application’s cloud database for storing user data","summary-two":"Responsible for optimizing the application’s offline functionality and performance","deployed":"https://quiet-temple-68742.herokuapp.com/","repository":"https://github.com/HHH-603/Online-Offline-Progressive-Web-App-Budget-Tracker"},{"id":3,"title":"Note Taker","role":"Developer","description":"Web application allowing users to write, save, and delete notes","environment":"JavaScript, Express.js, HTML, Bootstrap","summary-one":"Used Express.js as the application’s server-side framework, and created API Routes to retrieve/save/delete note data from the application’s JSON file","summary-two":"Responsible for both the Front End and Back End Development of the application","deployed":"https://hank-holmes-note-taker.herokuapp.com/","repository":"https://github.com/HHH-603/Note-Taker"}]');
 
 /***/ }),
 

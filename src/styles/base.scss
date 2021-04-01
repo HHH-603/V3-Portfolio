@@ -23,6 +23,7 @@ h2 {
 }
 
 p,
+li,
 a,
 Link {
   font-size: 0.9rem;
@@ -33,6 +34,7 @@ Link {
   &_profile {
     max-height: 20rem;
     max-width: 20rem;
+    margin: 0.5rem 0;
   }
 }
 

@@ -4,7 +4,10 @@ const Card = (props) => {
   return (
     <div className="card">
       <h2 className="secondary-header_card">{props.title}</h2>
-      <p className="paragraph">{props.role}</p>
+      <p className="paragraph">
+        <strong>Role: </strong>
+        {props.role}
+      </p>
       <p className="paragraph">
         <strong>Description: </strong>
         {props.description}

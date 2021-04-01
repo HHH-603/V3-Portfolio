@@ -11,12 +11,13 @@ const About = () => {
         <div className="container_paragraph">
           <p className="paragraph">
             I'm originally from{" "}
-            <anchor
+            <a
               className="anchor"
               href="https://en.wikipedia.org/wiki/Dunbarton,_New_Hampshire"
+              target="__blank"
             >
               Dunbarton, NH
-            </anchor>
+            </a>
             , and have several years of SaaS sales and campaign management
             experience. I recently graduated from{" "}
             <a

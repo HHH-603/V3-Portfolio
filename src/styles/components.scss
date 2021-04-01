@@ -164,3 +164,9 @@ $secondary-transition-and-effect: 200ms ease-in-out;
   margin: 0.5rem 0;
   padding: 0.5rem;
 }
+
+@media screen and (max-width: 575px) {
+  .list_skills {
+    flex-flow: column wrap;
+  }
+}

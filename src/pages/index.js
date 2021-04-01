@@ -2,11 +2,26 @@ import { Link } from "gatsby";
 import React from "react";
 import LandingPageLayout from "../components/landing-page-layout";
 
+var greeting = () => {
+  let today = new Date();
+  let hoursNow = today.getHours();
+
+  if (hoursNow > 18) {
+    return "Good evening!";
+  } else if (hoursNow > 12) {
+    return "Good afternoon!";
+  } else if (hoursNow > 0) {
+    return "Good morning!";
+  } else {
+    return "Wow! Thank you for visiting my portfolio so late at night!";
+  }
+};
+
 const Home = () => {
   return (
     <LandingPageLayout>
       <div className="container_landing-page">
-        <h1 className="header">Greetings!</h1>
+        <h1 className="header">{greeting()}</h1>
         <p>
           My name is{" "}
           <a
