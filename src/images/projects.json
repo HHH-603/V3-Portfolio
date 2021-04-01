@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Budget Tracker",
+    "image": "budget-tracker.png",
+    "description": "Allows users to easily track their money (purchases and deposits), bot hoffline and online.",
+    "environment": "JavaScript, HTML, Bootstrap, and MongoDB.",
+    "deployed": "https://quiet-temple-68742.herokuapp.com/",
+    "repository": "https://github.com/HHH-603/Online-Offline-Progressive-Web-App-Budget-Tracker"
+  },
+  {
+    "id": 2,
+    "title": "Note Taker",
+    "image": "note-taker.png",
+    "description": "Allows users to write, save, and delete notes.",
+    "environment": "JavaScript, Node.js, HTML, and Bootstrap.",
+    "deployed": "https://hank-holmes-note-taker.herokuapp.com/",
+    "repository": "https://github.com/HHH-603/Note-Taker"
+  },
+  {
+    "id": 3,
+    "title": "README Generator",
+    "image": "note-taker.png",
+    "description": "Generates a fully formatted README.md file based on user responses to questions in their terminal.",
+    "environment": "JavaScript and Node.js.",
+    "deployed": "N/A (this resource is not a web application)",
+    "repository": "https://github.com/HHH-603/Online-Offline-Progressive-Web-App-Budget-Tracker"
+  }
+]

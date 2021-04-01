@@ -26,7 +26,7 @@ const Navigation = () => {
             <Link className="link_navbar" to="/about">
               About
             </Link>
-            <Link className="link_navbar" to="#">
+            <Link className="link_navbar" to="/projects">
               Projects
             </Link>
             <Link className="link_navbar" to="#">
@@ -54,7 +54,7 @@ const Navigation = () => {
         <Link className="link" to="/about">
           About
         </Link>
-        <Link className="link" to="#">
+        <Link className="link" to="/projects">
           Projects
         </Link>
         <Link className="link" to="#">

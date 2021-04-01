@@ -109,6 +109,26 @@ $secondary-transition-and-effect: 200ms ease-in-out;
     margin: 1rem 0;
     transition: $base-transition;
   }
+
+  &_card {
+    text-decoration: none;
+    color: $base-font-color;
+    text-align: center;
+    width: auto;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid $base-font-color;
+    transition: all $base-transition-and-effect;
+  }
+
+  &_card:first-child {
+    margin-right: 0.5rem;
+  }
+
+  &_card:hover {
+    background-color: $base-font-color;
+    color: $base-background-color;
+  }
 }
 
 .link:hover {
@@ -128,4 +148,13 @@ $secondary-transition-and-effect: 200ms ease-in-out;
   &_skill {
     margin: 0 0.25rem;
   }
+}
+
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid $base-font-color;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
 }
