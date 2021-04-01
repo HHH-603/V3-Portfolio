@@ -129,6 +129,22 @@ $secondary-transition-and-effect: 200ms ease-in-out;
     background-color: $base-font-color;
     color: $base-background-color;
   }
+
+  &_contact {
+    text-decoration: none;
+    color: $base-font-color;
+    text-align: center;
+    width: 5.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid $base-font-color;
+    transition: all $base-transition-and-effect;
+  }
+
+  &_contact:hover {
+    background-color: $base-font-color;
+    color: $base-background-color;
+  }
 }
 
 .link:hover {

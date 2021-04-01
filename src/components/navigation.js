@@ -29,7 +29,7 @@ const Navigation = () => {
             <Link className="link_navbar" to="/projects">
               Projects
             </Link>
-            <Link className="link_navbar" to="#">
+            <Link className="link_navbar" to="/contact">
               Contact
             </Link>
           </div>
@@ -57,7 +57,7 @@ const Navigation = () => {
         <Link className="link" to="/projects">
           Projects
         </Link>
-        <Link className="link" to="#">
+        <Link className="link" to="/contact">
           Contact
         </Link>
       </div>
