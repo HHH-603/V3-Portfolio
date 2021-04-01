@@ -51,13 +51,13 @@ const Navigation = () => {
             : "container_dropdown-menu"
         }
       >
-        <Link className="link" to="/about">
+        <Link className="link_drop-down" to="/about">
           About
         </Link>
-        <Link className="link" to="/projects">
+        <Link className="link_drop-down" to="/projects">
           Projects
         </Link>
-        <Link className="link" to="/contact">
+        <Link className="link_drop-down" to="/contact">
           Contact
         </Link>
       </div>

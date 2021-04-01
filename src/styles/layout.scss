@@ -83,7 +83,7 @@ $base-container-width: 60rem;
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
-    height: 30vh;
+    height: 50vh;
     width: auto;
     margin-bottom: 1rem;
     background-color: $base-font-color;
@@ -113,7 +113,7 @@ $base-container-width: 60rem;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .container_navbar--links {
     display: none;
   }

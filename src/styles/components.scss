@@ -110,6 +110,16 @@ $secondary-transition-and-effect: 200ms ease-in-out;
     transition: $base-transition;
   }
 
+  &_drop-down {
+    text-decoration: none;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    background-color: $base-font-color;
+    color: $base-background-color;
+    margin: 1rem 0;
+    transition: $base-transition;
+  }
+
   &_card {
     text-decoration: none;
     color: $base-font-color;
