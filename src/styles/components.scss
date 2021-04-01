@@ -142,6 +142,12 @@ $secondary-transition-and-effect: 200ms ease-in-out;
     display: flex;
     flex-flow: row wrap;
   }
+
+  &_card {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
 
 .list-item {

@@ -15,6 +15,7 @@
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js")),
+  "component---src-pages-about-js": preferDefault(__webpack_require__(/*! ./src/pages/about.js */ "./src/pages/about.js")),
   "component---src-pages-index-js": preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")),
   "component---src-pages-projects-js": preferDefault(__webpack_require__(/*! ./src/pages/projects.js */ "./src/pages/projects.js"))
   }
@@ -6141,24 +6142,27 @@ __webpack_require__.r(__webpack_exports__);
 const Card = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    alt: props.title,
-    src: __webpack_require__("./src/components sync recursive")(props.image)
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "secondary-header_card"
+  }, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "paragraph"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Title: "), props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, props.role), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "paragraph"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Description: "), props.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "paragraph"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Environment: "), props.environment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "link_landing-page",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Environment: "), props.environment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "list_card"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_card"
+  }, "\u25FC ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("italic", null, props["summary-one"])), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_card"
+  }, "\u25FC ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("italic", null, props["summary-two"]))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container_card-links"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "link_card",
     href: props.deployed
   }, "View Live"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "link_landing-page",
+    className: "link_card",
     href: props.repository
   }, "View Source Code")));
 };
@@ -6355,6 +6359,100 @@ const NotFoundPage = () => {
 
 /***/ }),
 
+/***/ "./src/pages/about.js":
+/*!****************************!*\
+  !*** ./src/pages/about.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _images_alaska_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/alaska.jpg */ "./src/images/alaska.jpg");
+
+
+
+
+const About = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "header"
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "image_profile",
+    src: _images_alaska_jpg__WEBPACK_IMPORTED_MODULE_2__.default,
+    alt: "profile"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container_paragraph"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "paragraph"
+  }, "I'm originally from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("anchor", {
+    className: "anchor",
+    href: "https://en.wikipedia.org/wiki/Dunbarton,_New_Hampshire"
+  }, "Dunbarton, NH"), ", and have several years of SaaS sales and campaign management experience. I recently graduated from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://en.wikipedia.org/wiki/University_of_North_Carolina_at_Charlotte",
+    target: "__blank"
+  }, "UNC Charlotte"), "' Full Stack Web Development program and previously worked at EveryAction in Washington, DC, where I helped equip small and mid-sized nonprofits with customized cloud CRM solutions tailored to their unique fundraising, advocacy, and reporting goals."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "paragraph"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container_skills"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "paragraph"
+  }, "Some languages and technologies that I've recently been working with are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "list_skills"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://reactjs.org/",
+    target: "__blank"
+  }, "React"), "/", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://www.gatsbyjs.com/",
+    target: "__blank"
+  }, "Gatsby")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://www.javascript.com/",
+    target: "__blank"
+  }, "JavaScript")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://nodejs.org/en/",
+    target: "__blank"
+  }, "Node.js")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://www.mongodb.com/",
+    target: "__blank"
+  }, "MongoDB")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://www.mysql.com/",
+    target: "__blank"
+  }, "MySQL")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "anchor",
+    href: "https://sass-lang.com/",
+    target: "__blank"
+  }, "SASS/SCSS")))))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
+
+/***/ }),
+
 /***/ "./src/pages/index.js":
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
@@ -6433,27 +6531,30 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       projects: _images_projects_json__WEBPACK_IMPORTED_MODULE_3__
     };
 
-    this.addProject = id => {
-      const projects = this.state.projects.filter(project => project.id !== id);
+    this.Project = id => {
       this.setState({
-        projects
+        projects: _images_projects_json__WEBPACK_IMPORTED_MODULE_3__
       });
     };
   }
 
   render() {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
       className: "header"
     }, "Projects"), this.state.projects.map(project => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_card__WEBPACK_IMPORTED_MODULE_1__.default, {
       id: project.id,
       key: project.id,
       title: project.title,
+      role: project.role,
       description: project.description,
-      image: project.image,
       environment: project.environment,
+      "summary-one": project["summary-one"],
+      "summary-two": project["summary-two"],
       deployed: project.deployed,
       repository: project.repository
-    })));
+    }))));
   }
 
 }
@@ -17129,21 +17230,18 @@ module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.c
 
 /***/ }),
 
-/***/ "./src/components sync recursive":
-/*!******************************!*\
-  !*** ./src/components/ sync ***!
-  \******************************/
-/***/ ((module) => {
+/***/ "./src/images/alaska.jpg":
+/*!*******************************!*\
+  !*** ./src/images/alaska.jpg ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-function webpackEmptyContext(req) {
-	var e = new Error("Cannot find module '" + req + "'");
-	e.code = 'MODULE_NOT_FOUND';
-	throw e;
-}
-webpackEmptyContext.keys = () => ([]);
-webpackEmptyContext.resolve = webpackEmptyContext;
-webpackEmptyContext.id = "./src/components sync recursive";
-module.exports = webpackEmptyContext;
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/alaska-f3c03b0ad8ee6bb93d4cf2c5d4aa406d.jpg");
 
 /***/ }),
 
@@ -17154,7 +17252,7 @@ module.exports = webpackEmptyContext;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('[{"id":1,"title":"Budget Tracker","image":"budget-tracker.png","description":"Allows users to easily track their money (purchases and deposits), bot hoffline and online.","environment":"JavaScript, HTML, Bootstrap, and MongoDB.","deployed":"https://quiet-temple-68742.herokuapp.com/","repository":"https://github.com/HHH-603/Online-Offline-Progressive-Web-App-Budget-Tracker"},{"id":2,"title":"Note Taker","image":"note-taker.png","description":"Allows users to write, save, and delete notes.","environment":"JavaScript, Node.js, HTML, and Bootstrap.","deployed":"https://hank-holmes-note-taker.herokuapp.com/","repository":"https://github.com/HHH-603/Note-Taker"},{"id":3,"title":"README Generator","image":"note-taker.png","description":"Generates a fully formatted README.md file based on user responses to questions in their terminal.","environment":"JavaScript and Node.js.","deployed":"N/A (this resource is not a web application)","repository":"https://github.com/HHH-603/Online-Offline-Progressive-Web-App-Budget-Tracker"}]');
+module.exports = JSON.parse('[{"id":1,"title":"Constitution Quiz","role":"Team Lead, Front End Developer","description":"MERN web application enabling users to test their knowledge of American Civics and History","environment":"JavaScript, React, Node.js, MongoDB, CSS","summary-one":"Led team of 4 Developers through the application’s end-to-end lifecycle","summary-two":"Responsible for designing, building, and styling the application’s UI and Components","deployed":"https://constitutionquiz.herokuapp.com/loginform","repository":"https://github.com/HHH-603/Constitution_Quiz"},{"id":2,"title":"Budget Tracker","role":"Developer","description":"Progressive web application empowering users to easily track purchases and deposits both online and offline","environment":"JavaScript, HTML, Bootstrap, MongoDB","summary-one":"Used MongoDB Atlas as the application’s cloud database for storing user data","summary-two":"Responsible for optimizing the application’s offline functionality and performance","deployed":"https://quiet-temple-68742.herokuapp.com/","repository":"https://github.com/HHH-603/Online-Offline-Progressive-Web-App-Budget-Tracker"},{"id":3,"title":"Note Taker","role":"Developer","description":"Web application allowing users to write, save, and delete notes","environment":"JavaScript, Express.js, HTML, Bootstrap","summary-one":"Used Express.js as the application’s server-side framework, and created API Routes to retrieve/save/delete note data from the application’s JSON file","summary-two":"Responsible for both the Front End and Back End Development of the application","deployed":"https://hank-holmes-note-taker.herokuapp.com/","repository":"https://github.com/HHH-603/Note-Taker"}]');
 
 /***/ }),
 
@@ -17279,6 +17377,11 @@ module.exports = require("path");;
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/

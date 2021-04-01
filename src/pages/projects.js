@@ -20,8 +20,11 @@ class Projects extends Component {
               id={project.id}
               key={project.id}
               title={project.title}
+              role={project.role}
               description={project.description}
               environment={project.environment}
+              summary-one={project["summary-one"]}
+              summary-two={project["summary-two"]}
               deployed={project.deployed}
               repository={project.repository}
             />

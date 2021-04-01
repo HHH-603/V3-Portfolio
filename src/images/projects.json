@@ -1,29 +1,35 @@
 [
   {
     "id": 1,
+    "title": "Constitution Quiz",
+    "role": "Team Lead, Front End Developer",
+    "description": "MERN web application enabling users to test their knowledge of American Civics and History",
+    "environment": "JavaScript, React, Node.js, MongoDB, CSS",
+    "summary-one": "Led team of 4 Developers through the application’s end-to-end lifecycle",
+    "summary-two": "Responsible for designing, building, and styling the application’s UI and Components",
+    "deployed": "https://constitutionquiz.herokuapp.com/loginform",
+    "repository": "https://github.com/HHH-603/Constitution_Quiz"
+  },
+  {
+    "id": 2,
     "title": "Budget Tracker",
-    "image": "budget-tracker.png",
-    "description": "Allows users to easily track their money (purchases and deposits), bot hoffline and online.",
-    "environment": "JavaScript, HTML, Bootstrap, and MongoDB.",
+    "role": "Developer",
+    "description": "Progressive web application empowering users to easily track purchases and deposits both online and offline",
+    "environment": "JavaScript, HTML, Bootstrap, MongoDB",
+    "summary-one": "Used MongoDB Atlas as the application’s cloud database for storing user data",
+    "summary-two": "Responsible for optimizing the application’s offline functionality and performance",
     "deployed": "https://quiet-temple-68742.herokuapp.com/",
     "repository": "https://github.com/HHH-603/Online-Offline-Progressive-Web-App-Budget-Tracker"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Note Taker",
-    "image": "note-taker.png",
-    "description": "Allows users to write, save, and delete notes.",
-    "environment": "JavaScript, Node.js, HTML, and Bootstrap.",
+    "role": "Developer",
+    "description": "Web application allowing users to write, save, and delete notes",
+    "environment": "JavaScript, Express.js, HTML, Bootstrap",
+    "summary-one": "Used Express.js as the application’s server-side framework, and created API Routes to retrieve/save/delete note data from the application’s JSON file",
+    "summary-two": "Responsible for both the Front End and Back End Development of the application",
     "deployed": "https://hank-holmes-note-taker.herokuapp.com/",
     "repository": "https://github.com/HHH-603/Note-Taker"
-  },
-  {
-    "id": 3,
-    "title": "README Generator",
-    "image": "note-taker.png",
-    "description": "Generates a fully formatted README.md file based on user responses to questions in their terminal.",
-    "environment": "JavaScript and Node.js.",
-    "deployed": "N/A (this resource is not a web application)",
-    "repository": "https://github.com/HHH-603/Online-Offline-Progressive-Web-App-Budget-Tracker"
   }
 ]
