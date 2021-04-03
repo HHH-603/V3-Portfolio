@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "../components/card";
+import Container from "../components/container";
 import Layout from "../components/layout";
 import projects from "../images/projects.json";
 
@@ -13,7 +14,7 @@ class Projects extends Component {
   render() {
     return (
       <Layout>
-        <div className="container">
+        <Container>
           <h1 className="header">Projects</h1>
           {this.state.projects.map((project) => (
             <Card
@@ -29,7 +30,7 @@ class Projects extends Component {
               repository={project.repository}
             />
           ))}
-        </div>
+        </Container>
       </Layout>
     );
   }

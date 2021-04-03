@@ -1,11 +1,12 @@
 import React from "react";
+import Container from "../components/container";
 import Layout from "../components/layout";
 import ProfilePic from "../images/alaska.jpg";
 
 const About = () => {
   return (
     <Layout>
-      <div className="container">
+      <Container>
         <h1 className="header">About</h1>
         <img className="image_profile" src={ProfilePic} alt="profile" />
         <div className="container_paragraph">
@@ -118,7 +119,7 @@ const About = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </Container>
     </Layout>
   );
 };

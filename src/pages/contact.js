@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
 import Resume from "../assets/Hank-Holmes_Resume.pdf";
+import Container from "../components/container";
 
 const Contact = () => {
   return (
     <Layout>
-      <div className="container">
+      <Container>
         <h1 className="header">Contact</h1>
         <h2 className="secondary-header_contact">
           I'm currently looking for new opportunities, and would love to hear
@@ -35,7 +36,7 @@ const Contact = () => {
         <a className="link_contact" href={Resume} target="__blank">
           Resume
         </a>
-      </div>
+      </Container>
     </Layout>
   );
 };
