@@ -11,7 +11,7 @@ const About = () => {
         <Header>About</Header>
         <img className="image_profile" src={ProfilePic} alt="profile" />
         <div className="container_paragraph">
-          <p className="paragraph">
+          <Paragraph>
             I'm originally from{" "}
             <a
               className="anchor"
@@ -40,14 +40,14 @@ const About = () => {
             &nbsp;in Washington, DC, where I helped equip small and mid-sized
             nonprofits with customized cloud CRM solutions tailored to their
             unique fundraising, advocacy, and reporting goals.
-          </p>
+          </Paragraph>
           <div className="container_skills">
-            <p className="paragraph">
+            <Paragraph>
               <strong>
                 Some languages and technologies that I've recently been working
                 with are:
               </strong>
-            </p>
+            </Paragraph>
             <ul className="list_skills">
               <li className="list-item_skill">
                 {" "}

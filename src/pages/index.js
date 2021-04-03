@@ -24,7 +24,7 @@ const Home = () => {
     <LandingPageLayout>
       <LandingPageContainer>
         <Header>{greeting()}</Header>
-        <p>
+        <Paragraph>
           My name is{" "}
           <a
             className="anchor"
@@ -43,7 +43,7 @@ const Home = () => {
           </a>
           . I love to create thoughtfully-designed web apps and websites, solve
           complex problems, and learn new things every day.
-        </p>
+        </Paragraph>
         <div className="container_landing-page--links">
           <Link className="link" to="/about">
             About

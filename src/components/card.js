@@ -1,21 +1,22 @@
 import React from "react";
+import Paragraph from "./paragraph";
 
 const Card = (props) => {
   return (
     <div className="card">
       <h2 className="secondary-header_card">{props.title}</h2>
-      <p className="paragraph">
+      <Paragraph>
         <strong>Role: </strong>
         {props.role}
-      </p>
-      <p className="paragraph">
+      </Paragraph>
+      <Paragraph>
         <strong>Description: </strong>
         {props.description}
-      </p>
-      <p className="paragraph">
+      </Paragraph>
+      <Paragraph>
         <strong>Environment: </strong>
         {props.environment}
-      </p>
+      </Paragraph>
       <ul className="list_card">
         <li className="list-item_card">
           &#9724; <italic>{props["summary-one"]}</italic>
