@@ -18,8 +18,11 @@ class Projects extends Component {
       <Layout>
         <Helmet>
           <meta charSet="uft-8" />
+          <meta
+            name="description"
+            content="My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC."
+          />
           <title>Projects</title>
-          <link rel="canonical" href="http://www.hankholmes.me/projects" />
         </Helmet>
         <Container>
           <Header>Projects</Header>

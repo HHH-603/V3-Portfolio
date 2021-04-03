@@ -39,8 +39,8 @@ Link {
 
 .image {
   &_profile {
-    max-height: 20rem;
-    max-width: 20rem;
+    height: 20rem;
+    width: 20rem;
     margin: 0.5rem 0;
   }
 }
@@ -59,11 +59,11 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 353px) {
+@media screen and (max-width: 425px) {
   .image {
     &_profile {
-      max-height: 100%;
-      max-width: 100%;
+      height: 100%;
+      width: 100%;
     }
   }
 }

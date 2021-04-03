@@ -11,8 +11,11 @@ const Contact = () => {
     <Layout>
       <Helmet>
         <meta charSet="uft-8" />
+        <meta
+          name="description"
+          content="My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC."
+        />
         <title>Contact</title>
-        <link rel="canonical" href="http://www.hankholmes.me/contact" />
       </Helmet>
       <Container>
         <Header>Contact</Header>

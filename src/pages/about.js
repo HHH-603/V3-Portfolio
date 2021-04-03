@@ -15,8 +15,11 @@ const About = () => {
     <Layout>
       <Helmet>
         <meta charSet="uft-8" />
+        <meta
+          name="description"
+          content="My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC."
+        />
         <title>About</title>
-        <link rel="canonical" href="http://www.hankholmes.me/about" />
       </Helmet>
       <Container>
         <Header>About</Header>
