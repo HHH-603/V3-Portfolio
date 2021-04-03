@@ -49,7 +49,7 @@ const About = () => {
               with are:
             </strong>
           </Paragraph>
-          <ul className="list_skills">
+          <SkillsContainer>
             <li className="list-item_skill">
               {" "}
               <a
@@ -118,7 +118,7 @@ const About = () => {
                 SASS/SCSS
               </a>
             </li>
-          </ul>
+          </SkillsContainer>
         </SkillsContainer>
       </Container>
     </Layout>
