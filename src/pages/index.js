@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import { Helmet } from "react-helmet";
 import LandingPageContainer from "../components/container-landing-page";
 import Header from "../components/header";
 import LandingPageLayout from "../components/landing-page-layout";
@@ -24,6 +25,11 @@ var greeting = () => {
 const Home = () => {
   return (
     <LandingPageLayout>
+      <Helmet>
+        <meta charSet="uft-8" />
+        <title>Home</title>
+        <link rel="canonical" href="http://www.hankholmes.me" />
+      </Helmet>
       <LandingPageContainer>
         <Header>{greeting()}</Header>
         <Paragraph>

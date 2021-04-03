@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "My Gatsby Site",
+    title: "Hank Holmes | Full Stack Web Developer",
+    description:
+      "My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC.",
+    author: "Hank Holmes",
+    siteUrl: "http://www.hankholmes.me",
   },
   plugins: [
     "gatsby-plugin-sass",

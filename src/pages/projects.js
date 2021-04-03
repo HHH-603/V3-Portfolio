@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import Card from "../components/card";
 import Container from "../components/container";
 import Header from "../components/header";
@@ -15,6 +16,11 @@ class Projects extends Component {
   render() {
     return (
       <Layout>
+        <Helmet>
+          <meta charSet="uft-8" />
+          <title>Projects</title>
+          <link rel="canonical" href="http://www.hankholmes.me/projects" />
+        </Helmet>
         <Container>
           <Header>Projects</Header>
           {this.state.projects.map((project) => (

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Container from "../components/container";
 import Header from "../components/header";
 import Layout from "../components/layout";
@@ -12,6 +13,11 @@ import ProfilePic from "../images/alaska.jpg";
 const About = () => {
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="uft-8" />
+        <title>About</title>
+        <link rel="canonical" href="http://www.hankholmes.me/about" />
+      </Helmet>
       <Container>
         <Header>About</Header>
         <img className="image_profile" src={ProfilePic} alt="profile" />

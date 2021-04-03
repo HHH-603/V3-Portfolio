@@ -4,10 +4,16 @@ import Resume from "../assets/Hank-Holmes_Resume.pdf";
 import Container from "../components/container";
 import Header from "../components/header";
 import SecondaryHeader from "../components/secondary-header";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="uft-8" />
+        <title>Contact</title>
+        <link rel="canonical" href="http://www.hankholmes.me/contact" />
+      </Helmet>
       <Container>
         <Header>Contact</Header>
         <SecondaryHeader>
