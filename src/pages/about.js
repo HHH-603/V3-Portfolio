@@ -3,6 +3,7 @@ import Container from "../components/container";
 import Header from "../components/header";
 import Layout from "../components/layout";
 import Paragraph from "../components/paragraph";
+import SkillListItem from "../components/skill-list-item";
 import SkillsContainer from "../components/skills-container";
 import ProfilePic from "../images/alaska.jpg";
 
@@ -50,7 +51,7 @@ const About = () => {
             </strong>
           </Paragraph>
           <SkillsContainer>
-            <li className="list-item_skill">
+            <SkillListItem>
               {" "}
               <a
                 className="anchor"
@@ -67,8 +68,8 @@ const About = () => {
               >
                 Gatsby
               </a>
-            </li>
-            <li className="list-item_skill">
+            </SkillListItem>
+            <SkillListItem>
               {" "}
               <a
                 className="anchor"
@@ -77,8 +78,8 @@ const About = () => {
               >
                 JavaScript
               </a>
-            </li>
-            <li className="list-item_skill">
+            </SkillListItem>
+            <SkillListItem>
               {" "}
               <a
                 className="anchor"
@@ -87,8 +88,8 @@ const About = () => {
               >
                 Node.js
               </a>
-            </li>
-            <li className="list-item_skill">
+            </SkillListItem>
+            <SkillListItem>
               {" "}
               <a
                 className="anchor"
@@ -97,8 +98,8 @@ const About = () => {
               >
                 MongoDB
               </a>
-            </li>
-            <li className="list-item_skill">
+            </SkillListItem>
+            <SkillListItem>
               {" "}
               <a
                 className="anchor"
@@ -107,8 +108,8 @@ const About = () => {
               >
                 MySQL
               </a>
-            </li>
-            <li className="list-item_skill">
+            </SkillListItem>
+            <SkillListItem>
               {" "}
               <a
                 className="anchor"
@@ -117,7 +118,7 @@ const About = () => {
               >
                 SASS/SCSS
               </a>
-            </li>
+            </SkillListItem>
           </SkillsContainer>
         </SkillsContainer>
       </Container>
