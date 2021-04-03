@@ -122,3 +122,9 @@ $base-container-width: 60rem;
     display: flex;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .container_landing-page--links {
+    flex-flow: column wrap;
+  }
+}

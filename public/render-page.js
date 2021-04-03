@@ -6138,15 +6138,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _paragraph__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./paragraph */ "./src/components/paragraph.js");
+/* harmony import */ var _secondary_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./secondary-header */ "./src/components/secondary-header.js");
+
 
 
 
 const Card = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "secondary-header_card"
-  }, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_paragraph__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Role: "), props.role), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_paragraph__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Description: "), props.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_paragraph__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Environment: "), props.environment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_secondary_header__WEBPACK_IMPORTED_MODULE_2__.default, null, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_paragraph__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Role: "), props.role), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_paragraph__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Description: "), props.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_paragraph__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Environment: "), props.environment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list_card"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-item_card"
@@ -6481,6 +6481,56 @@ const Paragraph = props => {
 
 /***/ }),
 
+/***/ "./src/components/secondary-header.js":
+/*!********************************************!*\
+  !*** ./src/components/secondary-header.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const SecondaryHeader = props => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "secondary-header"
+  }, props.children);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SecondaryHeader);
+
+/***/ }),
+
+/***/ "./src/components/skill-list-item.js":
+/*!*******************************************!*\
+  !*** ./src/components/skill-list-item.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const SkillListItem = props => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "list-item_skill"
+  }, props.children);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SkillListItem);
+
+/***/ }),
+
 /***/ "./src/components/skills-container.js":
 /*!********************************************!*\
   !*** ./src/components/skills-container.js ***!
@@ -6503,6 +6553,56 @@ const SkillsContainer = props => {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SkillsContainer);
+
+/***/ }),
+
+/***/ "./src/components/skills-list.js":
+/*!***************************************!*\
+  !*** ./src/components/skills-list.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const SkillsList = props => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "list_skills"
+  }, props.children);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SkillsList);
+
+/***/ }),
+
+/***/ "./src/components/tertiary-header.js":
+/*!*******************************************!*\
+  !*** ./src/components/tertiary-header.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const TertiaryHeader = props => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "tertiary-header"
+  }, props.children);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TertiaryHeader);
 
 /***/ }),
 
@@ -6567,8 +6667,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/header */ "./src/components/header.js");
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
 /* harmony import */ var _components_paragraph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/paragraph */ "./src/components/paragraph.js");
-/* harmony import */ var _components_skills_container__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/skills-container */ "./src/components/skills-container.js");
-/* harmony import */ var _images_alaska_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/alaska.jpg */ "./src/images/alaska.jpg");
+/* harmony import */ var _components_skill_list_item__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/skill-list-item */ "./src/components/skill-list-item.js");
+/* harmony import */ var _components_skills_container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/skills-container */ "./src/components/skills-container.js");
+/* harmony import */ var _components_skills_list__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/skills-list */ "./src/components/skills-list.js");
+/* harmony import */ var _components_tertiary_header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/tertiary-header */ "./src/components/tertiary-header.js");
+/* harmony import */ var _images_alaska_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../images/alaska.jpg */ "./src/images/alaska.jpg");
+
+
+
 
 
 
@@ -6580,7 +6686,7 @@ __webpack_require__.r(__webpack_exports__);
 const About = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_container__WEBPACK_IMPORTED_MODULE_1__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_header__WEBPACK_IMPORTED_MODULE_2__.default, null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "image_profile",
-    src: _images_alaska_jpg__WEBPACK_IMPORTED_MODULE_6__.default,
+    src: _images_alaska_jpg__WEBPACK_IMPORTED_MODULE_9__.default,
     alt: "profile"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_paragraph__WEBPACK_IMPORTED_MODULE_4__.default, null, "I'm originally from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "anchor",
@@ -6594,11 +6700,7 @@ const About = () => {
     className: "anchor",
     href: "https://www.everyaction.com/",
     target: "__blank"
-  }, "EveryAction"), "\xA0in Washington, DC, where I helped equip small and mid-sized nonprofits with customized cloud CRM solutions tailored to their unique fundraising, advocacy, and reporting goals."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skills_container__WEBPACK_IMPORTED_MODULE_5__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_paragraph__WEBPACK_IMPORTED_MODULE_4__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Some languages and technologies that I've recently been working with are:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list_skills"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "EveryAction"), "\xA0in Washington, DC, where I helped equip small and mid-sized nonprofits with customized cloud CRM solutions tailored to their unique fundraising, advocacy, and reporting goals."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skills_container__WEBPACK_IMPORTED_MODULE_6__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_tertiary_header__WEBPACK_IMPORTED_MODULE_8__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Some languages and technologies that I've recently been working with are:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skills_container__WEBPACK_IMPORTED_MODULE_6__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skills_list__WEBPACK_IMPORTED_MODULE_7__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skill_list_item__WEBPACK_IMPORTED_MODULE_5__.default, null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "anchor",
     href: "https://reactjs.org/",
     target: "__blank"
@@ -6606,37 +6708,27 @@ const About = () => {
     className: "anchor",
     href: "https://www.gatsbyjs.com/",
     target: "__blank"
-  }, "Gatsby")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "Gatsby")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skill_list_item__WEBPACK_IMPORTED_MODULE_5__.default, null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "anchor",
     href: "https://www.javascript.com/",
     target: "__blank"
-  }, "JavaScript")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "JavaScript")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skill_list_item__WEBPACK_IMPORTED_MODULE_5__.default, null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "anchor",
     href: "https://nodejs.org/en/",
     target: "__blank"
-  }, "Node.js")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "Node.js")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skill_list_item__WEBPACK_IMPORTED_MODULE_5__.default, null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "anchor",
     href: "https://www.mongodb.com/",
     target: "__blank"
-  }, "MongoDB")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "MongoDB")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skill_list_item__WEBPACK_IMPORTED_MODULE_5__.default, null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "anchor",
     href: "https://www.mysql.com/",
     target: "__blank"
-  }, "MySQL")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "list-item_skill"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "MySQL")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_skill_list_item__WEBPACK_IMPORTED_MODULE_5__.default, null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "anchor",
     href: "https://sass-lang.com/",
     target: "__blank"
-  }, "SASS/SCSS"))))));
+  }, "SASS/SCSS")))))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);

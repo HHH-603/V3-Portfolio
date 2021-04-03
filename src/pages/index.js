@@ -44,7 +44,7 @@ const Home = () => {
             Charlotte, NC
           </a>
           . I love to create thoughtfully-designed web apps and websites, solve
-          complex problems, and learn new things every day.
+          complex problems, and learn something new every day.
         </Paragraph>
         <LandingPageLinksContainer>
           <Link className="link" to="/about">
