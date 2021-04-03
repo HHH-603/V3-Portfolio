@@ -7,7 +7,9 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
+  height: 100%;
   font-family: "Poppins";
   color: $base-font-color;
 }
@@ -36,6 +38,20 @@ Link {
     max-width: 20rem;
     margin: 0.5rem 0;
   }
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: $base-font-color;
+  border-top: 1px solid $base-background-color;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 353px) {

@@ -5,8 +5,8 @@ import Resume from "../assets/Hank-Holmes_Resume.pdf";
 const Contact = () => {
   return (
     <Layout>
-      <h1 className="header">Contact</h1>
       <div className="container">
+        <h1 className="header">Contact</h1>
         <h2 className="secondary-header_contact">
           I'm currently looking for new opportunities, and would love to hear
           from you if I can be of service!

@@ -27,10 +27,17 @@ const About = () => {
             >
               UNC Charlotte
             </a>
-            ' Full Stack Web Development program and previously worked at
-            EveryAction in Washington, DC, where I helped equip small and
-            mid-sized nonprofits with customized cloud CRM solutions tailored to
-            their unique fundraising, advocacy, and reporting goals.
+            's Full Stack Web Development program and previously worked at{" "}
+            <a
+              className="anchor"
+              href="https://www.everyaction.com/"
+              target="__blank"
+            >
+              EveryAction
+            </a>
+            &nbsp;in Washington, DC, where I helped equip small and mid-sized
+            nonprofits with customized cloud CRM solutions tailored to their
+            unique fundraising, advocacy, and reporting goals.
           </p>
           <div className="container_skills">
             <p className="paragraph">

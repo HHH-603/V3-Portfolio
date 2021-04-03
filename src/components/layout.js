@@ -3,6 +3,7 @@ import Navigation from "./navigation";
 import "@fontsource/poppins";
 import "@fontsource/pacifico";
 import "../styles/main.scss";
+import Footer from "./footer";
 
 const Layout = (props) => {
   return (
@@ -10,6 +11,7 @@ const Layout = (props) => {
       <div className="layout">
         <Navigation />
         {props.children}
+        <Footer />
       </div>
     </>
   );
