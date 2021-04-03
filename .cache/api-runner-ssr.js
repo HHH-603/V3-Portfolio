@@ -1,23 +1,23 @@
 var plugins = [{
       name: 'gatsby-plugin-image',
-      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-image/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-sitemap',
-      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
     },{
       name: 'gatsby-plugin-manifest',
-      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"icon":"src/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"53aa06cf17e4239d0dba6ffd09854e02"},
     },{
       name: 'gatsby-plugin-mdx',
-      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
-      options: {"plugins":[],"extensions":[".mdx"],"defaultLayouts":{},"gatsbyRemarkPlugins":[],"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"/home/hhh603/Documents/Projects/V3-Portfolio"},
+      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
+      options: {"plugins":[],"extensions":[".mdx"],"defaultLayouts":{},"gatsbyRemarkPlugins":[],"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
