@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Paragraph from "../components/paragraph";
 import SkillListItem from "../components/skill-list-item";
 import SkillsContainer from "../components/skills-container";
+import SkillsList from "../components/skills-list";
+import TertiaryHeader from "../components/tertiary-header";
 import ProfilePic from "../images/alaska.jpg";
 
 const About = () => {
@@ -44,81 +46,83 @@ const About = () => {
           unique fundraising, advocacy, and reporting goals.
         </Paragraph>
         <SkillsContainer>
-          <Paragraph>
+          <TertiaryHeader>
             <strong>
               Some languages and technologies that I've recently been working
               with are:
             </strong>
-          </Paragraph>
+          </TertiaryHeader>
           <SkillsContainer>
-            <SkillListItem>
-              {" "}
-              <a
-                className="anchor"
-                href="https://reactjs.org/"
-                target="__blank"
-              >
-                React
-              </a>
-              /
-              <a
-                className="anchor"
-                href="https://www.gatsbyjs.com/"
-                target="__blank"
-              >
-                Gatsby
-              </a>
-            </SkillListItem>
-            <SkillListItem>
-              {" "}
-              <a
-                className="anchor"
-                href="https://www.javascript.com/"
-                target="__blank"
-              >
-                JavaScript
-              </a>
-            </SkillListItem>
-            <SkillListItem>
-              {" "}
-              <a
-                className="anchor"
-                href="https://nodejs.org/en/"
-                target="__blank"
-              >
-                Node.js
-              </a>
-            </SkillListItem>
-            <SkillListItem>
-              {" "}
-              <a
-                className="anchor"
-                href="https://www.mongodb.com/"
-                target="__blank"
-              >
-                MongoDB
-              </a>
-            </SkillListItem>
-            <SkillListItem>
-              {" "}
-              <a
-                className="anchor"
-                href="https://www.mysql.com/"
-                target="__blank"
-              >
-                MySQL
-              </a>
-            </SkillListItem>
-            <SkillListItem>
-              {" "}
-              <a
-                className="anchor"
-                href="https://sass-lang.com/"
-                target="__blank"
-              >
-                SASS/SCSS
-              </a>
-            </SkillListItem>
+            <SkillsList>
+              <SkillListItem>
+                {" "}
+                <a
+                  className="anchor"
+                  href="https://reactjs.org/"
+                  target="__blank"
+                >
+                  React
+                </a>
+                /
+                <a
+                  className="anchor"
+                  href="https://www.gatsbyjs.com/"
+                  target="__blank"
+                >
+                  Gatsby
+                </a>
+              </SkillListItem>
+              <SkillListItem>
+                {" "}
+                <a
+                  className="anchor"
+                  href="https://www.javascript.com/"
+                  target="__blank"
+                >
+                  JavaScript
+                </a>
+              </SkillListItem>
+              <SkillListItem>
+                {" "}
+                <a
+                  className="anchor"
+                  href="https://nodejs.org/en/"
+                  target="__blank"
+                >
+                  Node.js
+                </a>
+              </SkillListItem>
+              <SkillListItem>
+                {" "}
+                <a
+                  className="anchor"
+                  href="https://www.mongodb.com/"
+                  target="__blank"
+                >
+                  MongoDB
+                </a>
+              </SkillListItem>
+              <SkillListItem>
+                {" "}
+                <a
+                  className="anchor"
+                  href="https://www.mysql.com/"
+                  target="__blank"
+                >
+                  MySQL
+                </a>
+              </SkillListItem>
+              <SkillListItem>
+                {" "}
+                <a
+                  className="anchor"
+                  href="https://sass-lang.com/"
+                  target="__blank"
+                >
+                  SASS/SCSS
+                </a>
+              </SkillListItem>
+            </SkillsList>
           </SkillsContainer>
         </SkillsContainer>
       </Container>
