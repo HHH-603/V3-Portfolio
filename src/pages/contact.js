@@ -3,16 +3,17 @@ import Layout from "../components/layout";
 import Resume from "../assets/Hank-Holmes_Resume.pdf";
 import Container from "../components/container";
 import Header from "../components/header";
+import SecondaryHeader from "../components/secondary-header";
 
 const Contact = () => {
   return (
     <Layout>
       <Container>
         <Header>Contact</Header>
-        <h2 className="secondary-header_contact">
+        <SecondaryHeader>
           I'm currently looking for new opportunities, and would love to hear
           from you if I can be of service!
-        </h2>
+        </SecondaryHeader>
         <a
           className="link_contact"
           href="mailto:hholmes726@gmail.com"

@@ -1,10 +1,11 @@
 import React from "react";
 import Paragraph from "./paragraph";
+import SecondaryHeader from "./secondary-header";
 
 const Card = (props) => {
   return (
     <div className="card">
-      <h2 className="secondary-header_card">{props.title}</h2>
+      <SecondaryHeader>{props.title}</SecondaryHeader>
       <Paragraph>
         <strong>Role: </strong>
         {props.role}
