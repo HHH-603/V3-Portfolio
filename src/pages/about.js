@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../components/container";
+import Header from "../components/header";
 import Layout from "../components/layout";
 import ProfilePic from "../images/alaska.jpg";
 
@@ -7,7 +8,7 @@ const About = () => {
   return (
     <Layout>
       <Container>
-        <h1 className="header">About</h1>
+        <Header>About</Header>
         <img className="image_profile" src={ProfilePic} alt="profile" />
         <div className="container_paragraph">
           <p className="paragraph">

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Card from "../components/card";
 import Container from "../components/container";
+import Header from "../components/header";
 import Layout from "../components/layout";
 import projects from "../images/projects.json";
 
@@ -15,7 +16,7 @@ class Projects extends Component {
     return (
       <Layout>
         <Container>
-          <h1 className="header">Projects</h1>
+          <Header>Projects</Header>
           {this.state.projects.map((project) => (
             <Card
               id={project.id}

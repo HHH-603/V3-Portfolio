@@ -2,12 +2,13 @@ import React from "react";
 import Layout from "../components/layout";
 import Resume from "../assets/Hank-Holmes_Resume.pdf";
 import Container from "../components/container";
+import Header from "../components/header";
 
 const Contact = () => {
   return (
     <Layout>
       <Container>
-        <h1 className="header">Contact</h1>
+        <Header>Contact</Header>
         <h2 className="secondary-header_contact">
           I'm currently looking for new opportunities, and would love to hear
           from you if I can be of service!
