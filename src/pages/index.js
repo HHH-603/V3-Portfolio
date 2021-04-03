@@ -3,6 +3,7 @@ import React from "react";
 import LandingPageContainer from "../components/container-landing-page";
 import Header from "../components/header";
 import LandingPageLayout from "../components/landing-page-layout";
+import LandingPageLinksContainer from "../components/landing-page-links-container";
 import Paragraph from "../components/paragraph";
 
 var greeting = () => {
@@ -45,7 +46,7 @@ const Home = () => {
           . I love to create thoughtfully-designed web apps and websites, solve
           complex problems, and learn new things every day.
         </Paragraph>
-        <div className="container_landing-page--links">
+        <LandingPageLinksContainer>
           <Link className="link" to="/about">
             About
           </Link>
@@ -55,7 +56,7 @@ const Home = () => {
           <Link className="link" to="/contact">
             Contact
           </Link>
-        </div>
+        </LandingPageLinksContainer>
       </LandingPageContainer>
     </LandingPageLayout>
   );

@@ -3,6 +3,7 @@ import React from "react";
 import LandingPageContainer from "../components/container-landing-page";
 import Header from "../components/header";
 import LandingPageLayout from "../components/landing-page-layout";
+import LandingPageLinksContainer from "../components/landing-page-links-container";
 import Paragraph from "../components/paragraph";
 
 const NotFoundPage = () => {
@@ -11,7 +12,7 @@ const NotFoundPage = () => {
       <LandingPageContainer>
         <Header>Page Not Found</Header>
         <Paragraph>This is not the page you are looking for.</Paragraph>
-        <div className="container_landing-page--links">
+        <LandingPageLinksContainer>
           <Link className="link" to="/about">
             About
           </Link>
@@ -21,7 +22,7 @@ const NotFoundPage = () => {
           <Link className="link" to="/contact">
             Contact
           </Link>
-        </div>
+        </LandingPageLinksContainer>
       </LandingPageContainer>
     </LandingPageLayout>
   );
