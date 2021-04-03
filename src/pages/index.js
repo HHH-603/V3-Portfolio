@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import LandingPageContainer from "../components/container-landing-page";
 import LandingPageLayout from "../components/landing-page-layout";
 
 var greeting = () => {
@@ -20,7 +21,7 @@ var greeting = () => {
 const Home = () => {
   return (
     <LandingPageLayout>
-      <div className="container_landing-page">
+      <LandingPageContainer>
         <h1 className="header">{greeting()}</h1>
         <p>
           My name is{" "}
@@ -53,7 +54,7 @@ const Home = () => {
             Contact
           </Link>
         </div>
-      </div>
+      </LandingPageContainer>
     </LandingPageLayout>
   );
 };
