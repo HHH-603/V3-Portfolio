@@ -1,4 +1,3 @@
-import { propTypes } from "gatsby-plugin-image/dist/src/components/gatsby-image.server";
 import React from "react";
 
 const Paragraph = (props) => {

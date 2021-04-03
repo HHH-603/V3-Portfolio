@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../components/container";
 import Header from "../components/header";
 import Layout from "../components/layout";
+import Paragraph from "../components/paragraph";
 import ProfilePic from "../images/alaska.jpg";
 
 const About = () => {

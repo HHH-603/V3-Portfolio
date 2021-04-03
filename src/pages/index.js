@@ -3,6 +3,7 @@ import React from "react";
 import LandingPageContainer from "../components/container-landing-page";
 import Header from "../components/header";
 import LandingPageLayout from "../components/landing-page-layout";
+import Paragraph from "../components/paragraph";
 
 var greeting = () => {
   let today = new Date();
