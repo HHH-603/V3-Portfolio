@@ -42,6 +42,13 @@ $secondary-transition-and-effect: 200ms ease-in-out;
     var(--d, 0%) 200% no-repeat;
   transition: $base-transition,
     background-size $base-transition $base-transition;
+
+  &_card {
+    text-decoration: none;
+    color: $base-font-color;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
 }
 
 .anchor:hover {

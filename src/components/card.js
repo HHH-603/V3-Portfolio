@@ -5,7 +5,11 @@ import SecondaryHeader from "./secondary-header";
 const Card = (props) => {
   return (
     <div className="card">
-      <SecondaryHeader>{props.title}</SecondaryHeader>
+      <SecondaryHeader>
+        <a className="anchor_card" href={props.deployed} target="__blank">
+          {props.title}
+        </a>
+      </SecondaryHeader>
       <Paragraph>
         <strong>Role: </strong>
         {props.role}
