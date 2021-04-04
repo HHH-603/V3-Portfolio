@@ -128,7 +128,7 @@ const About = () => {
                   href="https://sass-lang.com/"
                   target="__blank"
                 >
-                  SASS/SCSS
+                  SASS
                 </a>
               </SkillListItem>
             </SkillsList>
