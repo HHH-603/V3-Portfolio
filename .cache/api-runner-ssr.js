@@ -15,6 +15,10 @@ var plugins = [{
       plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-html-attributes/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      name: 'gatsby-plugin-offline',
+      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       name: 'gatsby-plugin-manifest',
       plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"icon":"src/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"53aa06cf17e4239d0dba6ffd09854e02"},
@@ -26,6 +30,10 @@ var plugins = [{
       name: 'gatsby-plugin-html-attributes',
       plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-html-attributes/gatsby-ssr'),
       options: {"plugins":[],"lang":"eng"},
+    },{
+      name: 'gatsby-plugin-offline',
+      plugin: require('/home/hhh603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[],"precachePages":["/","/404/","/about/","/projects/","/contact/"]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
