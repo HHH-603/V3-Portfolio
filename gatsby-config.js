@@ -15,8 +15,6 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-html-attributes",
-    "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -49,9 +47,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-offline`,
+      resolve: "gatsby-plugin-offline",
       options: {
-        precachePages: [`/`, `/404/`, `/about/`, `/projects/`, `/contact/`],
+        precachePages: ["/*"],
       },
     },
   ],
