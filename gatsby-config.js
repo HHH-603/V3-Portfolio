@@ -4,7 +4,8 @@ module.exports = {
     description:
       "My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC.",
     author: "Hank Holmes",
-    siteUrl: "http://www.hankholmes.me",
+    url: "https://hankholmes.me",
+    image: "/src/images/alaska.jpg",
   },
   plugins: [
     "gatsby-plugin-sass",
