@@ -9,16 +9,13 @@ import { Helmet } from "react-helmet";
 const Contact = () => {
   return (
     <Layout>
-      <Helmet
-        htmlAttributes={{
-          lang: "eng",
-        }}
-      >
+      <Helmet>
         <meta charSet="uft-8" />
         <meta
           name="description"
           content="My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC."
         />
+        <html lang="en" amp />
         <title>Contact</title>
       </Helmet>
       <Container>
