@@ -10,11 +10,7 @@ import Paragraph from "../components/paragraph";
 const NotFoundPage = () => {
   return (
     <LandingPageLayout>
-      <Helmet
-        htmlAttributes={{
-          lang: "eng",
-        }}
-      >
+      <Helmet>
         <meta charSet="uft-8" />
         <meta
           name="description"

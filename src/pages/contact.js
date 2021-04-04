@@ -9,11 +9,7 @@ import { Helmet } from "react-helmet";
 const Contact = () => {
   return (
     <Layout>
-      <Helmet
-        htmlAttributes={{
-          lang: "eng",
-        }}
-      >
+      <Helmet>
         <meta charSet="uft-8" />
         <meta
           name="description"

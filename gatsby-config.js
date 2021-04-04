@@ -15,6 +15,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-html-attributes",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -39,6 +40,12 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "eng",
+      },
     },
   ],
 };

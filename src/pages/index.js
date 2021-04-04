@@ -25,11 +25,7 @@ var greeting = () => {
 const Home = () => {
   return (
     <LandingPageLayout>
-      <Helmet
-        htmlAttributes={{
-          lang: "eng",
-        }}
-      >
+      <Helmet>
         <meta charSet="uft-8" />
         <meta
           name="description"
