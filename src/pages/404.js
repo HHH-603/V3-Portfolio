@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import React from "react";
-import { Helmet } from "react-helmet";
 import LandingPageContainer from "../components/container-landing-page";
 import Header from "../components/header";
 import LandingPageLayout from "../components/landing-page-layout";
@@ -10,14 +9,6 @@ import Paragraph from "../components/paragraph";
 const NotFoundPage = () => {
   return (
     <LandingPageLayout>
-      <Helmet>
-        <meta charSet="uft-8" />
-        <meta
-          name="description"
-          content="My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC."
-        />
-        <title>404</title>
-      </Helmet>
       <LandingPageContainer>
         <Header>Page Not Found</Header>
         <Paragraph>This is not the page you are looking for.</Paragraph>
