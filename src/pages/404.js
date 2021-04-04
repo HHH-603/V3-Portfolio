@@ -9,14 +9,6 @@ import Paragraph from "../components/paragraph";
 const NotFoundPage = () => {
   return (
     <div className="layout_404">
-      <Helmet>
-        <meta charSet="uft-8" />
-        <meta
-          name="description"
-          content="My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC."
-        />
-        <title>404</title>
-      </Helmet>
       <LandingPageContainer>
         <Header>Page Not Found</Header>
         <Paragraph>This is not the page you are looking for.</Paragraph>
