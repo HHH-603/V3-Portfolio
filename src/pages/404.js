@@ -3,12 +3,13 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import LandingPageContainer from "../components/container-landing-page";
 import Header from "../components/header";
+import LandingPageLayout from "../components/landing-page-layout";
 import LandingPageLinksContainer from "../components/landing-page-links-container";
 import Paragraph from "../components/paragraph";
 
 const NotFoundPage = () => {
   return (
-    <div className="layout_404">
+    <LandingPageLayout>
       <Helmet>
         <meta charSet="uft-8" />
         <meta
@@ -32,7 +33,7 @@ const NotFoundPage = () => {
           </Link>
         </LandingPageLinksContainer>
       </LandingPageContainer>
-    </div>
+    </LandingPageLayout>
   );
 };
 
