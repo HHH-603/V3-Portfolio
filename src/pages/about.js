@@ -13,7 +13,11 @@ import ProfilePic from "../images/alaska.jpg";
 const About = () => {
   return (
     <Layout>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "eng",
+        }}
+      >
         <meta charSet="uft-8" />
         <meta
           name="description"
