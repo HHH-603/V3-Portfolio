@@ -15,7 +15,7 @@ const NotFoundPage = () => {
           name="description"
           content="My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC."
         />
-        <title>Page Not Found</title>
+        <title>404</title>
       </Helmet>
       <LandingPageContainer>
         <Header>Page Not Found</Header>
