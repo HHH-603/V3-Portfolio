@@ -4,7 +4,7 @@ module.exports = {
     description:
       "My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC.",
     author: "Hank Holmes",
-    url: "https://hankholmes.me",
+    siteUrl: "https://hankholmes.me",
     image: "/static/alaska.jpg",
   },
   plugins: [
