@@ -8,7 +8,7 @@ import SkillListItem from "../components/skill-list-item";
 import SkillsContainer from "../components/skills-container";
 import SkillsList from "../components/skills-list";
 import TertiaryHeader from "../components/tertiary-header";
-import ProfilePic from "../images/alaska.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 
 const About = () => {
   return (
@@ -24,7 +24,14 @@ const About = () => {
       </Helmet>
       <Container>
         <Header>About</Header>
-        <img className="image_profile" src={ProfilePic} alt="profile" />
+        <StaticImage
+          className="image_profile"
+          src="../images/alaska.jpg"
+          alt="profile"
+          formats={["AUTO", "WEBP", "AVIF"]}
+          loading="eager"
+          placeholder="blurred"
+        />
         <Paragraph>
           I'm originally from{" "}
           <a
