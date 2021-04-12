@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
+    "gatsby-plugin-offline",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
@@ -19,6 +20,10 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
+        name: "Hank Holmes | Full Stack Web Developer",
+        short_name: "Hank Holmes",
+        display: "standalone",
+        start_url: "/",
       },
     },
     "gatsby-plugin-mdx",
@@ -44,12 +49,6 @@ module.exports = {
       resolve: "gatsby-plugin-html-attributes",
       options: {
         lang: "eng",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-offline",
-      options: {
-        precachePages: ["/*"],
       },
     },
   ],
