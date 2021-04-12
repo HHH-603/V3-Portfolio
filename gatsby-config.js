@@ -18,7 +18,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        start_url: "/",
         icon: "src/images/icon.png",
         name: "Hank Holmes | Full Stack Web Developer",
         short_name: "Hank Holmes",
