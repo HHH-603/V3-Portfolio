@@ -22,6 +22,8 @@ module.exports = {
         icon: "src/images/icon.png",
         name: "Hank Holmes | Full Stack Web Developer",
         short_name: "Hank Holmes",
+        background_color: "#222626",
+        theme_color: "#222626",
         display: "standalone",
         start_url: "https://www.hankholmes.me",
       },
