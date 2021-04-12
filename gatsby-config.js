@@ -23,7 +23,7 @@ module.exports = {
         name: "Hank Holmes | Full Stack Web Developer",
         short_name: "Hank Holmes",
         display: "standalone",
-        start_url: "/",
+        start_url: "https://www.hankholmes.me",
       },
     },
     "gatsby-plugin-mdx",
