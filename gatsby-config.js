@@ -5,7 +5,6 @@ module.exports = {
       "My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC.",
     author: "Hank Holmes",
     siteUrl: "https://hankholmes.me",
-    url: "https://hankholmes.me",
     image: "/alaska.jpg",
     twitterUsername: "@Sherlock774",
   },
@@ -19,13 +18,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        start_url: "/",
         icon: "src/images/icon.png",
         name: "Hank Holmes | Full Stack Web Developer",
         short_name: "Hank Holmes",
         background_color: "#222626",
         theme_color: "#222626",
         display: "standalone",
-        start_url: "https://www.hankholmes.me",
       },
     },
     "gatsby-plugin-mdx",
