@@ -17,7 +17,7 @@ var plugins = [{
     },{
       name: 'gatsby-plugin-manifest',
       plugin: require('/home/hhh-603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"icon":"src/images/icon.png","name":"Hank Holmes | Full Stack Web Developer","short_name":"Hank Holmes","background_color":"#222626","theme_color":"#222626","display":"standalone","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"53aa06cf17e4239d0dba6ffd09854e02"},
+      options: {"plugins":[],"start_url":"/","icon":"src/images/icon.png","name":"Hank Holmes | Full Stack Web Developer","short_name":"Hank Holmes","background_color":"#222626","theme_color":"#222626","display":"standalone","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"53aa06cf17e4239d0dba6ffd09854e02"},
     },{
       name: 'gatsby-plugin-mdx',
       plugin: require('/home/hhh-603/Documents/Projects/V3-Portfolio_Gatsby/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
