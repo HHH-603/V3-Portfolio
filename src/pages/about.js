@@ -73,71 +73,27 @@ const About = () => {
             <SkillsList>
               <SkillListItem>
                 {" "}
-                <a
-                  className="anchor"
-                  href="https://reactjs.org/"
-                  target="__blank"
-                >
-                  React
-                </a>
-                /
-                <a
-                  className="anchor"
-                  href="https://www.gatsbyjs.com/"
-                  target="__blank"
-                >
-                  Gatsby
-                </a>
+                <p>React/Gatsby</p>
               </SkillListItem>
               <SkillListItem>
                 {" "}
-                <a
-                  className="anchor"
-                  href="https://www.javascript.com/"
-                  target="__blank"
-                >
-                  JavaScript
-                </a>
+                <p>JavaScript</p>
               </SkillListItem>
               <SkillListItem>
                 {" "}
-                <a
-                  className="anchor"
-                  href="https://nodejs.org/en/"
-                  target="__blank"
-                >
-                  Node.js
-                </a>
+                <p>Node.js</p>
               </SkillListItem>
               <SkillListItem>
                 {" "}
-                <a
-                  className="anchor"
-                  href="https://www.mongodb.com/"
-                  target="__blank"
-                >
-                  MongoDB
-                </a>
+                <p>MongoDB</p>
               </SkillListItem>
               <SkillListItem>
                 {" "}
-                <a
-                  className="anchor"
-                  href="https://www.mysql.com/"
-                  target="__blank"
-                >
-                  MySQL
-                </a>
+                <p>MySQL</p>
               </SkillListItem>
               <SkillListItem>
                 {" "}
-                <a
-                  className="anchor"
-                  href="https://sass-lang.com/"
-                  target="__blank"
-                >
-                  SASS
-                </a>
+                <p>SASS</p>
               </SkillListItem>
             </SkillsList>
           </SkillsContainer>

@@ -38,6 +38,7 @@ $secondary-transition-and-effect: 200ms ease-in-out;
 .anchor {
   text-decoration: none;
   color: $base-font-color;
+  border-bottom: 1px dashed $base-font-color;
   background: linear-gradient($base-font-color 0 0) 0% calc(-1px - 100%) /
     var(--d, 0%) 200% no-repeat;
   transition: $base-transition,
