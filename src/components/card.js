@@ -31,10 +31,10 @@ const Card = (props) => {
         </li>
       </ul>
       <div className="container_card-links">
-        <a className="link_card" href={props.deployed}>
+        <a className="link_card" href={props.deployed} target="__blank">
           View Live
         </a>
-        <a className="link_card" href={props.repository}>
+        <a className="link_card" href={props.repository} target="__blank">
           View Source Code
         </a>
       </div>
