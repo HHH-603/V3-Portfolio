@@ -19,7 +19,7 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         start_url: "/",
-        icon: "src/images/icon.png",
+        icon: "src/images/favicon-h.png",
         name: "Hank Holmes | Full Stack Web Developer",
         short_name: "Hank Holmes",
         background_color: "#222626",
