@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: "Hank Holmes | Full Stack Web Developer",
     description:
-      "My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC.",
+      "Hank is a Full Stack Web Developer based in Charlotte, NC who enjoyes designing + building websites, web applications, and unified software solutions.",
     author: "Hank Holmes",
     siteUrl: "https://hankholmes.me",
-    image: "/alaska.jpg",
+    image: "https://i.imgur.com/smcSJLz.jpg",
     twitterUsername: "@Sherlock774",
   },
   plugins: [
