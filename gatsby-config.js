@@ -7,9 +7,6 @@ module.exports = {
     siteUrl: "https://hankholmes.me",
     image: "https://i.imgur.com/smcSJLz.jpg",
     twitterUsername: "@Sherlock774",
-    flags: {
-      FAST_DEV: true,
-    },
   },
   plugins: [
     "gatsby-plugin-sass",
