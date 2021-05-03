@@ -13,7 +13,7 @@ const Contact = () => {
         <meta charSet="uft-8" />
         <meta
           name="description"
-          content="My name is Hank, and I'm a Full Stack Web Developer based in Charlotte, NC."
+          content="My name is Hank, and I'm a Front End Web Developer based in Charlotte, NC."
         />
         <html lang="en" amp />
         <title>Contact</title>

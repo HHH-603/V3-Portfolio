@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Hank Holmes | Full Stack Web Developer",
+    title: "Hank Holmes | Front End Web Developer",
     description:
       "Hank is a Front End Web Developer based in Charlotte, NC who enjoyes designing + building websites, web applications, and unified software solutions.",
     author: "Hank Holmes",
@@ -23,7 +23,7 @@ module.exports = {
       options: {
         start_url: "/",
         icon: "src/images/favicon-h.png",
-        name: "Hank Holmes | Full Stack Web Developer",
+        name: "Hank Holmes | Front End Web Developer",
         short_name: "Hank Holmes",
         background_color: "#222626",
         theme_color: "#222626",
