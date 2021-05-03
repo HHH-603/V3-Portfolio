@@ -9,7 +9,7 @@ import projects from "../images/projects.json";
 class Projects extends Component {
   state = { projects };
 
-  Project = (id) => {
+  Project = () => {
     this.setState({ projects });
   };
 
