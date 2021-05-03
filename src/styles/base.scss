@@ -9,7 +9,6 @@
 
 html,
 body {
-  height: 100%;
   font-family: "Poppins";
   color: $base-font-color;
 }
@@ -46,7 +45,6 @@ Link {
 }
 
 footer {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
