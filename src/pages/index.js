@@ -45,7 +45,7 @@ const Home = () => {
           >
             Hank
           </a>{" "}
-          , and I'm a Full Stack Web Developer based in{" "}
+          , and I'm a Front End Web Developer based in{" "}
           <a
             className="anchor"
             href="https://en.wikipedia.org/wiki/Charlotte,_North_Carolina"
