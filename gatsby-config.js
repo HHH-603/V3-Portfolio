@@ -1,27 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "Hank Holmes | Front End Web Developer",
+    title: "Hank Holmes",
     description:
       "Hank is a Front End Web Developer based in Charlotte, NC who enjoyes designing + building websites, web applications, and unified software solutions.",
     author: "Hank Holmes",
     siteUrl: "https://hankholmes.me",
     image: "https://i.imgur.com/smcSJLz.jpg",
     twitterUsername: "@Sherlock774",
-    keywords: [
-      "Hank",
-      "Holmes",
-      "Front",
-      "End",
-      "Developer",
-      "Charlotte",
-      "NC",
-      "North Carolina",
-      "NH",
-      "New Hampshire",
-      "EveryAction",
-      "NGP",
-      "VAN",
-    ],
   },
   plugins: [
     "gatsby-plugin-sass",

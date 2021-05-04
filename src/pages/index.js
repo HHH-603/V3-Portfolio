@@ -5,7 +5,7 @@ import Header from "../components/header";
 import LandingPageLayout from "../components/landing-page-layout";
 import LandingPageLinksContainer from "../components/landing-page-links-container";
 import Paragraph from "../components/paragraph";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 var greeting = () => {
   let today = new Date();
@@ -25,7 +25,7 @@ var greeting = () => {
 const Home = () => {
   return (
     <>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <LandingPageLayout>
         <LandingPageContainer>
           <Header>{greeting()}</Header>
