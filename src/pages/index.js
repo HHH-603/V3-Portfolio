@@ -25,7 +25,7 @@ var greeting = () => {
 const Home = () => {
   return (
     <>
-      <Seo title="Home" image="../static/alaska.jpg" />
+      <Seo title="Home" />
       <LandingPageLayout>
         <LandingPageContainer>
           <Header>{greeting()}</Header>
