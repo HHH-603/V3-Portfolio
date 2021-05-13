@@ -7,6 +7,8 @@ module.exports = {
     siteUrl: "https://hankholmes.me",
     image: "https://hankholmes.com/alaska.jpg",
     twitterUsername: "@Sherlock774",
+    keywords:
+      "Hank, Holmes, Front, End, Web, Developer, Charlotte, NC, North, Carolina",
   },
   plugins: [
     "gatsby-plugin-sass",
