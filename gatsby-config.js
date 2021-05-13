@@ -5,7 +5,7 @@ module.exports = {
       "Hank is a Front End Web Developer based in Charlotte, NC who enjoyes designing + building websites, web applications, and unified software solutions.",
     author: "Hank Holmes",
     siteUrl: "https://hankholmes.me",
-    image: "https://i.imgur.com/smcSJLz.jpg",
+    image: "https://live.staticflickr.com/65535/51177670574_5d902d180a_h.jpg",
     twitterUsername: "@Sherlock774",
   },
   plugins: [
