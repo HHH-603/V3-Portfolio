@@ -4,12 +4,12 @@ import Resume from "../assets/Hank-Holmes_Resume.pdf";
 import Container from "../components/container";
 import Header from "../components/header";
 import SecondaryHeader from "../components/secondary-header";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 
 const Contact = () => {
   return (
     <>
-      <Seo title="Contact" />
+      <SEO title="Contact" />
       <Layout>
         <Container>
           <Header>Contact</Header>

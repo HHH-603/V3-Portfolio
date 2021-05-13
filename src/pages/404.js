@@ -5,12 +5,12 @@ import Header from "../components/header";
 import LandingPageLayout from "../components/landing-page-layout";
 import LandingPageLinksContainer from "../components/landing-page-links-container";
 import Paragraph from "../components/paragraph";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 
 const NotFoundPage = () => {
   return (
     <>
-      <Seo title="404" />
+      <SEO title="404" />
       <LandingPageLayout>
         <LandingPageContainer>
           <Header>Page Not Found</Header>

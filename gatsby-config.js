@@ -5,20 +5,9 @@ module.exports = {
       "Hank is a Front End Web Developer based in Charlotte, NC who enjoyes designing + building websites, web applications, and unified software solutions.",
     author: "Hank Holmes",
     siteUrl: "https://hankholmes.me",
-    image: "https://hankholmes.com/alaska.jpg",
-    twitterUsername: "@Sherlock774",
-    keywords: [
-      "Hank",
-      "Holmes",
-      "Front",
-      "End",
-      "Web",
-      "Developer",
-      "Charlotte",
-      "NC",
-      "North",
-      "Carolina",
-    ],
+    image: "src/images/alaska.jpg",
+    keywords:
+      "Hank, Holmes, Front, End, Web, Developer, Charlotte, NC, North, Carolina",
   },
   plugins: [
     "gatsby-plugin-sass",

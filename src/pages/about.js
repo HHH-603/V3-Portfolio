@@ -8,12 +8,12 @@ import SkillsContainer from "../components/skills-container";
 import SkillsList from "../components/skills-list";
 import TertiaryHeader from "../components/tertiary-header";
 import { StaticImage } from "gatsby-plugin-image";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 
 const About = () => {
   return (
     <>
-      <Seo title="About" />
+      <SEO title="About" />
       <Layout>
         <Container>
           <Header>About</Header>

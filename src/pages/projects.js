@@ -3,7 +3,7 @@ import Card from "../components/card";
 import Container from "../components/container";
 import Header from "../components/header";
 import Layout from "../components/layout";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import projects from "../images/projects.json";
 
 class Projects extends Component {
@@ -16,7 +16,7 @@ class Projects extends Component {
   render() {
     return (
       <>
-        <Seo title="Projects" />
+        <SEO title="Projects" />
         <Layout>
           <Container>
             <Header>Projects</Header>
