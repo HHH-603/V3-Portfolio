@@ -43,7 +43,13 @@ const About = () => {
             >
               UNC Charlotte
             </a>
-            's Full Stack Web Development program and previously worked at{" "}
+            's Full Stack Web Development program (Class of 2021), and currently work at{" "}
+            <a
+            className="anchor"
+            href="https://www.paymentus.com/"
+            target="__blank"
+            >Paymentus
+            </a> as an Implementation QA Analyst. Previously, I worked at{" "}
             <a
               className="anchor"
               href="https://www.everyaction.com/"

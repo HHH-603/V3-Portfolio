@@ -14,8 +14,8 @@ const Contact = () => {
         <Container>
           <Header>Contact</Header>
           <SecondaryHeader>
-            I'm currently looking for new opportunities, and would love to hear
-            from you if I can be of service!
+            I'm always open to new opportunities, and would love to hear
+            from you if you think I'd be a good fit for your team!
           </SecondaryHeader>
           <a
             className="link_contact"
